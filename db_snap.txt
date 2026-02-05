@@ -1,0 +1,23 @@
+--- USERS ---
+ID: 3b27bce6-3516-48a4-b9c8-112beea61d6b, Name: Muhammad Annas, Email: annas@gmail.com
+ID: f65d7bc8-9577-4a27-87f3-eb1cdb400daf, Name: Test User, Email: test_4bdb9387-d8e2-4b24-969b-251f7e1e24c6@example.com
+ID: fecd5e08-a3a0-4270-a280-ab9eed7f973f, Name: Test User, Email: test_2be8e9ad-650e-44c6-b33e-f2dd8d317b3b@example.com
+ID: test_user_chatbot, Name: Chatbot Test User, Email: test_chatbot@example.com
+ID: test_tool_user, Name: Tool Tester, Email: tool_test@example.com
+ID: test_user_dd487005, Name: Agent Tester, Email: test_user_dd487005@example.com
+ID: test_user_d48e4e72, Name: Agent Tester, Email: test_user_d48e4e72@example.com
+ID: 87d9dd4d-5c7b-42d6-ac72-e52788a80c4b, Name: , Email: 
+ID: test_user_7317f9a8, Name: Agent Tester, Email: test_user_7317f9a8@example.com
+ID: test_user_14c4255f, Name: Agent Tester, Email: test_user_14c4255f@example.com
+ID: test_user_143931b8, Name: Agent Tester, Email: test_user_143931b8@example.com
+ID: test_type_user, Name: Type Tester, Email: type_test@example.com
+
+--- TASKS ---
+ID: 9, Title: Dinner, UserID: 3b27bce6-3516-48a4-b9c8-112beea61d6b, Completed: True
+ID: 8, Title: Giaic Class, UserID: 3b27bce6-3516-48a4-b9c8-112beea61d6b, Completed: True
+ID: 17, Title: Agent Task, UserID: test_user_d48e4e72, Completed: False
+ID: 19, Title: Add task, UserID: 3b27bce6-3516-48a4-b9c8-112beea61d6b, Completed: False
+ID: 20, Title: Lunch, UserID: 3b27bce6-3516-48a4-b9c8-112beea61d6b, Completed: False
+ID: 21, Title: Agent Task, UserID: test_user_7317f9a8, Completed: False
+ID: 22, Title: Agent Task, UserID: test_user_14c4255f, Completed: False
+ID: 23, Title: Agent Task, UserID: test_user_143931b8, Completed: False

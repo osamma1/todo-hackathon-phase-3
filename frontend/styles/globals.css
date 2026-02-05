@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-rgb: 8, 10, 15;
+  --primary-cyan: 6, 182, 212;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background-color: rgb(var(--background-rgb));
+  background-image: none;
+}
+
+/* Custom glassmorphism utility classes */
+.glass {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-card {
+  @apply backdrop-blur-2xl bg-white/5 border border-white/10 shadow-2xl;
+}
+
+.neon-border {
+  @apply border border-cyan-500 shadow-[0_0_15px_rgba(6,182,212,0.4)];
+}
+
+.neon-glow {
+  @apply shadow-[0_0_15px_rgba(6,182,212,0.4)];
+}
+
+.neon-glow-hover:hover {
+  @apply shadow-[0_0_20px_rgba(6,182,212,0.6)];
+}
+
+/* Floating animation */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.floating {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Cyan text instead of gradient */
+.gradient-text {
+  @apply text-cyan-400 font-bold;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #080a0f;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-cyan-600 rounded-full hover:bg-cyan-500;
+}
+
+/* Particle background replaced with subtle cyan glows */
+.particle-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+.particle-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 50% 50%, rgba(6, 182, 212, 0.05) 0%, transparent 70%);
+  z-index: -1;
+}
